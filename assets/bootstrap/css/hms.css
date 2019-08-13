@@ -1,0 +1,18 @@
+.hms-btn{
+  background-color: #605ca8;
+  color: white;
+ }
+ .hms-hover:hover{
+  color: white;
+ }
+ .hms{
+ 	background-color: white;
+ }
+ .link,
+ .link-hover:hover{
+ 	color: black;
+ }
+.link:active{
+	background-color: #605ca8;
+  	color: white;
+}
