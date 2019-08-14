@@ -82,12 +82,14 @@ class Applications extends CI_Controller
          
  $this->load->library('email');
 
+ 
+ //this example was tested on/using smtp.sendgrid.net //so you can create an account there.
 $this->email->initialize(array(
   'protocol' => 'smtp',
-  'smtp_host' => 'smtp.sendgrid.net',
-  'smtp_user' => 'apikey',
-  'smtp_pass' => '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',
-  'smtp_port' => 587,
+  'smtp_host' => '',
+  'smtp_user' => '',
+  'smtp_pass' => '',
+  'smtp_port' => '',
     'mailtype'=> 'html',
   'crlf' => "\r\n",
   'newline' => "\r\n"
