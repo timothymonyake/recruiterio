@@ -110,7 +110,7 @@ $message .= '</body></html>';
 
 $this->email->from('applications@recruiterio.org', 'RecruiterIO');
 $this->email->to($email);
-$this->email->cc('segolamemonyake@gmail.com');
+//$this->email->cc('');
 $this->email->subject($subject);
 $this->email->message($message);
 $this->email->attach($file_path);
