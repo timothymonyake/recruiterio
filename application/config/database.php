@@ -73,12 +73,24 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $active_group = 'default';
 $query_builder = TRUE;
 
+/*
+Click Reveal Config Varsand copy theCLEARDB_DATABASE_URL value.
+I’ll use mine as an 
+example: mysql://b5bf52783a17e5:90ac0673@us-cdbr-iron-east-05.cleardb.net/heroku_f677d75e73d39a7?reconnect=true.
+Everything after the @ symbol until the / is the DB_HOST, us-cdbr-iron-east-05.cleardb.net Everything after
+/ until ? is DB_DATABASE, heroku_f677d75e73d39a7 The string after the // until : is the DB_USERNAME, b5bf52783a17e5 
+The string between : and @ is the DB_PASSWORD, 90ac0673 Now that we have our heroku DB credentials, let’s update our
+database.php file so that the app can access the 
+*/
+
+
+//mysql://ba72213a31aa5b:fd76ae56@us-cdbr-iron-east-02.cleardb.net/heroku_9731bc4dcd047d8?reconnect=true
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '',
-	'database' => 'talent_search',
+	'hostname' => 'us-cdbr-iron-east-02.cleardb.net',
+	'username' => 'ba72213a31aa5b',
+	'password' => 'fd76ae56',
+	'database' => 'heroku_9731bc4dcd047d8',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
